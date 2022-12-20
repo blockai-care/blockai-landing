@@ -21,5 +21,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
+      - name: Install firebase
+        run: npm i -g firebase
       - name: Deploy to firebase
-        run: yarn firebase deploy --only hosting:blockai-landingpage --token ${{ secrets.FIREBASE_TOKEN }}
+        run: firebase deploy --only hosting:blockai-landingpage --token ${{ secrets.FIREBASE_TOKEN }}
