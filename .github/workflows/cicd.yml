@@ -22,6 +22,6 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - name: Install firebase
-        run: npm i -g firebase
+        run: npm i -g firebase-tools
       - name: Deploy to firebase
         run: firebase deploy --only hosting:blockai-landingpage --token ${{ secrets.FIREBASE_TOKEN }}
