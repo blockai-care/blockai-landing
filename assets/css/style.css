@@ -62,7 +62,6 @@ body {
   color: var(--blackColor);
   font-weight: 700;
 }
-
 a {
   -webkit-transition: var(--transition);
   transition: var(--transition);
