@@ -3,7 +3,7 @@
     {
       "target": "blockai-landingpage",
       "public": ".",
-      "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+      "ignore": ["firebase.json", "**/.*", "**/node_modules/**", ".git"],
       "rewrites": [
         {
           "source": "**",
